@@ -1,2 +1,2 @@
 # angular-directives-sample
-Structural and Attribute Directives Samples
+Custom Structural and Custom Attribute Directives Samples

@@ -1,0 +1,26 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+
+  <div style="border:2px solid turquoise; padding:10px; margin:10px">
+    <h3> Structural Directives</h3>
+    <div style="border:2px solid green; padding:10px; margin:10px">
+      <div *appIf="showElement">Show Custom Structural Directive</div>
+      <button (click)="onToggleElement()"> Toggle Element</button>
+    </div>
+    <div style="border:2px solid blue; padding:10px; margin:10px">
+      <div *appLoop="let loopElem of arrayOfElements; index as i">Hello-{{loopElem}}-{{i}}</div>
+      <button (click)="onPushElement()"> Push Element to array</button>
+    </div>
+  </div>
+  <div style="border:2px solid yellowgreen; padding:10px; margin:10px">
+    <h3> Attribute Directives</h3>
+    <div style="border:2px solid green; padding:10px; margin:10px">
+      <div appCustomColor="red">Red Color Text</div>
+      <div appCustomColor="blue">Blue Color Text</div>
+      <div appCustomColor="turquoise">Turquoise Color Text</div>
+    </div>
+  </div>
+</div>
